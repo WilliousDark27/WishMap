@@ -16,7 +16,6 @@ from dotenv import load_dotenv  # Импортируем dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Загружаем переменные из файла .env
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 
