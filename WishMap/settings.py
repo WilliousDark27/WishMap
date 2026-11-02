@@ -12,12 +12,12 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 
 import os
 from pathlib import Path
-from dotenv import load_schema  # Импортируем dotenv
+from dotenv import load_dotenv  # Импортируем dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Загружаем переменные из файла .env
-load_schema(os.path.join(BASE_DIR, '.env'))
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 
 # Quick-start development settings - unsuitable for production
